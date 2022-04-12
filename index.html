@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body">
+        <div class="header">TICTACTOE</div>
+        <div class="main">
+            <div class="singleTab">
+                Choose your Symbol
+                <button id="X"> X </button>
+                <button id="O"> O </button>
+            </div>
+            <div class="doubleTab">
+                <div class="symbolAssigned">
+                    <div class="player"></div>
+                    <div class="symbol"></div>                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="item" id="item0"></div>
+                <div class="item" id="item1" style="border-left: black solid 3px; border-right: black solid 3px;"></div>
+                <div class="item" id="item2"></div>
+                <div class="item" id="item3" style="border-top: black solid 3px; border-bottom: black solid 3px;"></div>
+                <div class="item" id="item4" style="border: black solid 3px;"></div>
+                <div class="item" id="item5" style="border-top: black solid 3px; border-bottom: black solid 3px;"></div>
+                <div class="item" id="item6"></div>
+                <div class="item" id="item7" style="border-left: black solid 3px; border-right: black solid 3px;"></div>
+                <div class="item" id="item8"></div>
+            </div>
+        </div>
+        <div class="footer">
+            @rohitpaul23
+        </div>
+    </div>
+    
+    <div class="menu">
+        <button class="reset">RESET</button>
+        <button class="mode">CHANGE MODE</button>
+    </div>
+
+    <div class="starter">
+        <div class="comp">
+            Player vs Computer
+        </div>
+        <div class="vs">
+            Player1 vs Player2
+        </div>
+    </div>
+
+    <div class="congrats">
+        <p style="margin:1rem;">Congratulation</p>
+        <div class="winner">
+        </div>
+        <button class="congratsBut">Play Again</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+*{
+    text-align: center;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.body{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.3;
+}
+
+.header{
+    flex: 1;
+    font-size: 3em;
+}
+
+.main{
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    align-items: center;
+}
+
+.main .singleTab{
+    flex: 1;
+    display: none;
+}
+
+.main .doubleTab{
+    flex: 1;
+    display: flex;
+    gap: 3rem;
+}
+
+
+.symbolAssigned{
+    display: flex;
+    width: 12em;
+    align-items: center;
+    background-color: azure;
+    border-radius: 1em;
+}
+
+.symbolAssigned .player, .symbol{
+    flex: 1;
+    background-color: #f7b2b2;
+}
+
+button{
+    font-size: 1em;
+    height: 2em;
+    width: 3em;
+    background-color: white;
+    font-weight: 600;
+}
+
+button :hover{
+    background-color: aqua;
+}
+
+.main .container{
+    flex: 6;
+    display: grid;
+    grid-template: repeat(3, 120px) /repeat(3, 140px);
+    justify-content: center;
+    width: min(500px, 100vw);
+    padding: 25px;
+}
+
+.main .container .item{
+    background-color: aliceblue;
+    font-size: 3em;
+}
+
+.footer{
+    flex: 1;
+}
+
+.menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10em;
+    left: 20em;
+    height: 15em;
+    width: 6em;
+    justify-content: center;
+    gap: 2em;
+}
+
+.menu .reset, .mode{
+    height: 4em;
+    width: 6em;
+}
+
+.starter{
+    position: relative;
+    height: 8em;
+    width: 22em;
+    font-size: 2em;
+    background-color: #ffbf69;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+}
+
+.starter .comp, .vs{
+    height: 3em;
+    color: black;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: antiquewhite;
+}
+
+.comp:hover, .vs:hover{
+    background-color: white;
+}
+
+.congrats{
+    position: relative;
+    height: 5em;
+    width: 16em;
+    font-size: 2em;
+    background-color: green;
+    color: white;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.congrats .winner{
+    background-color: green;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.congrats .congratsBut{
+    width: 8rem;
+    height: 3rem;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 6px;
+}
